@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .children {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: red;
+        font-size: 42px;
+        text-align: center;
+        margin: 50px;
+      }
+      .overflow {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="font-family: monospace; background-color: rgb(67, 136, 138); color: white; text-align: center; padding: 1px;"><h2>Day 11 Assignment - Position, Overflow, Margin Auto, Center Image</h2></div>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        border: 5px solid blue;
+      "
+    >
+      <div
+        class="children"
+        style="
+          background-color: yellow;
+          position: relative;
+          top: 100px;
+          left: 50px;
+        "
+      >
+        1
+      </div>
+      <div
+        class="children"
+        style="
+          background-color: yellow;
+          /* position: relative; */
+          /* position: absolute; */
+          position: sticky;
+          top: 0px;
+          left: 500px;
+        "
+      >
+        2
+      </div>
+      <div
+        class="children"
+        style="
+          background-color: yellow;
+          position: absolute;
+          top: 120px;
+          left: 300px;
+        "
+      >
+        3
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: row">
+      <p
+        class="overflow"
+        style="
+          overflow: visible;
+          height: 100px;
+          width: 100px;
+          border: 5px solid black;
+        "
+      >
+        Hello yes no what are you doing good great nic perfect great work keep
+        going amazing mannn wowwww
+      </p>
+
+      <p
+        class="overflow"
+        style="
+          overflow: hidden;
+          height: 100px;
+          width: 100px;
+          border: 5px solid black;
+        "
+      >
+        Hello yes no what are you doing good great nic perfect great work keep
+        going amazing mannn wowwww
+      </p>
+
+      <p
+        class="overflow"
+        style="
+          overflow: scroll;
+          height: 100px;
+          width: 100px;
+          border: 5px solid black;
+        "
+      >
+        Hello yes no what are you doing good great nic perfect great work keep
+        going amazing mannn wowwww
+      </p>
+
+      <p
+        class="overflow"
+        style="
+          overflow: auto;
+          height: 100px;
+          width: 100px;
+          border: 5px solid black;
+        "
+      >
+        Hello yes no what are you doing good great nic perfect great work keep
+        going amazing mannn wowwww
+      </p>
+    </div>
+
+    <div
+      style="
+        width: 50%;
+        border: 5px solid black;
+        height: 100px;
+        margin-left: 25%;
+      "
+    >
+      Testing Margin Auto
+    </div>
+
+    <div
+      style="width: 50%; border: 5px solid black; height: 100px; margin: auto"
+    >
+      Testing Margin Auto
+    </div>
+    <img
+      style="display: block; margin-left: auto; margin-right: auto; width: 20%"
+      src="./../Images/1717922599756.jpg"
+      alt=""
+    />
+  </body>
+</html>
