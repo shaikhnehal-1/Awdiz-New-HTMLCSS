@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            height: 60px;
+            border: 2px solid black;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #parent > div {
+            width: 20%;
+            border: 2px solid blue;
+        }
+
+        #sidebar {
+            display: none;
+        }
+
+        @media screen and (min-width : 600px) and (max-width : 1000px) {
+            
+        }
+
+        @media screen and (min-width : 200px) and (max-width : 599px) {
+            
+        }
+
+        @media screen and (min-width : 600px) and (max-width : 1000px) {
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="sidebar">Sidebar</div>
+        <div id="icon">Icon</div>
+        <div id="icon">Navigations</div>
+        <div id="icon">Search Bar</div>
+        <div id="icon">Profile</div>
+    </div>
+</body>
+</html>
